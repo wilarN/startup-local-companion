@@ -7,7 +7,7 @@ import sys
 name_of_docker_container = "open-webui"
 
 # Change this to your local path to the stable-diffusion-webui directory. This script uses the batch file to start the API. (webui.bat --api --listen)
-directory_to_stable_diffusion_webui_absolute = "C://example//path//to//stable-diffusion-webui//" # Example path
+directory_to_stable_diffusion_webui_absolute = "C://example//path//to//stable-diffusion-webui" # Change this to your path
 
 starting = '''
                                                                                        
@@ -64,6 +64,8 @@ def start_all():
         print("Error starting up: ", e)
 
     print("[ All services started successfully. ]")
+    print("Dont forget to add http://host.docker.internal:7860/ to the Open WebUI's image gen API.")
+    print("Open the webgui: http://localhost:3000/")
 
 def stop_all():
     print(stopping)
