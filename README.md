@@ -1,6 +1,6 @@
 # startup-local-comp
 
-Automation script to startup and stop:
+Automation script to startup and stop in windows (ollama in wsl):
 - Open webui(docker)
 - `ollama serve` in wsl
 - Stable diffusion local webui using `--api` & `--listen`
