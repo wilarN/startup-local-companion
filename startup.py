@@ -5,7 +5,9 @@ import sys
 # http://host.docker.internal:7860/
 
 name_of_docker_container = "open-webui"
-directory_to_stable_diffusion_webui_absolute = "C://DEV//AI_GEN_THING//stable-diffusion-webui//"
+
+# Change this to your local path to the stable-diffusion-webui directory. This script uses the batch file to start the API. (webui.bat --api --listen)
+directory_to_stable_diffusion_webui_absolute = "C://example//path//to//stable-diffusion-webui//" # Example path
 
 starting = '''
                                                                                        
